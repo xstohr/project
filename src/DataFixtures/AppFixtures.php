@@ -11,13 +11,11 @@ class AppFixtures extends Fixture
     public function load(ObjectManager $manager)
     {
 
-        $faker = Factory::create();
-
         for ($i = 0; $i < 4; $i++)
         {
             $article = new Article();
-            $article->setTitle($faker->title);
-            $article->setAuthor($faker->author);
+            $article->setTitle('title');
+            $article->setAuthor('author');
             $article->setText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
               Proin sodales, arcu non commodo vulputate, neque lectus luctus metus, 
               ac hendrerit mi erat eu ante. Nullam blandit arcu erat,

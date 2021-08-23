@@ -19,8 +19,6 @@ class Article
 
     /**
      * @ORM\Column(type="string", length=60)
-     * @Assert\NotBlank(message="Title cannot be empty.")
-     * @Assert\MaxLength(max=60)
      */
     private $title;
 
@@ -31,7 +29,6 @@ class Article
 
     /**
      * @ORM\Column(type="string", length=60, unique=true)
-     * @Assert\MaxLength(max=60)
      */
     private $author;
 

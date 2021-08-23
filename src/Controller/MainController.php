@@ -86,7 +86,7 @@ class MainController extends AbstractController
      * @return RedirectResponse
      */
 
-    public function deleteArticle($id): RedirectResponse
+    public function removeArticle($id): RedirectResponse
     {
         $article = $this->articleRepository->findOneBy(['id' => $id]);
 
