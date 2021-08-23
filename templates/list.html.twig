@@ -19,8 +19,8 @@
                 <td>{{ article.author }}</td>
                 <td>{{ article.createdAt }}</td>
                 <td><a href="{{ path('app_main_editarticle') }}" class="btn btn-primary">Edit</a>
-                    <a href="{{ path('delete_article') }}" class="btn btn-danger">Delete</a>
-                    <a href="#" class="btn btn-secondary">Detail</a></td>
+                    <a href="{{ path('delete_article') }}" class="btn btn-danger" onClick="return confirm('Are you sure ?')">Delete</a>
+                    <a href="" class="btn btn-secondary">Detail</a></td>
             </tr>
             {% endfor %}
             </tbody>
